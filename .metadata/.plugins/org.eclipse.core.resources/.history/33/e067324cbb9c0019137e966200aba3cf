@@ -37,8 +37,6 @@ public class SendMessage extends BaseMethods {
 		homepage.chat.sendKeys("teste page factory");
 		homepage.buttonsend.click();
 		
-		//testusername
-		
 
 	}
  
