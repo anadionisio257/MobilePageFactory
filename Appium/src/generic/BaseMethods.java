@@ -57,5 +57,10 @@ public class BaseMethods {
 	public static void closeBrowser() throws Exception {
 		mobiledriver.quit();	
 	}
+	
+	//Method to click on Android Native Back Button
+	public static void clickAndroidBackButton(){
+		mobiledriver.navigate().back();
+	}
 
 }

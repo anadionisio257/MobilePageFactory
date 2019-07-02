@@ -3,10 +3,8 @@ package tests;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.By;
-
 import generic.BaseMethods;
-import pages.HomePage;
+import pages.SingleChatPage;
 
 public class SendMessage extends BaseMethods {
 
@@ -23,10 +21,10 @@ public class SendMessage extends BaseMethods {
 	@Test
 	public void sendMessage() throws Exception {
 
-		HomePage homepage = new HomePage(mobiledriver);
+		SingleChatPage singlechatpage = new SingleChatPage(mobiledriver);
 
 		scrollUntilElement("Inês Mikas 93");
-		homepage.sendMessageToFriend("Teste refactoring");
+		singlechatpage.sendMessageToFriend("Teste refactoring");
 
 	}
 
