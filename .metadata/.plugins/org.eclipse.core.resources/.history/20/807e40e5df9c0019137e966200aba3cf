@@ -53,9 +53,5 @@ public class BaseMethods {
 				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""
 						+ str + "\").instance(0))").click();
 	}
-	
-	public static void closeBrowser() throws Exception {
-		mobiledriver.quit();	
-	}
 
 }

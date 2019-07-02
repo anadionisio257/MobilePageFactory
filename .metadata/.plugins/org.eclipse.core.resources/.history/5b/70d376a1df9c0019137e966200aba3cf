@@ -19,9 +19,9 @@ public class HomePage extends BaseMethods {
 	@FindBy(id = "com.whatsapp:id/send")
 	public WebElement buttonsend;
 	
-	public void sendMessageToFriend(String message){
+	public void sendMessage(){
 		chat.click();
-		chat.sendKeys(message);
+		chat.sendKeys("teste page factory");
 		buttonsend.click();
 		
 	}

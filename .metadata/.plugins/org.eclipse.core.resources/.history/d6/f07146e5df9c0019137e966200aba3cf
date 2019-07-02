@@ -31,9 +31,9 @@ public class SendMessage extends BaseMethods {
 	}
 
 	@AfterClass
-	public static void teardown() throws Exception {
+	public static void teardown() {
 		// close the app
-		closeBrowser();
+		mobiledriver.quit();
 	}
 
 }

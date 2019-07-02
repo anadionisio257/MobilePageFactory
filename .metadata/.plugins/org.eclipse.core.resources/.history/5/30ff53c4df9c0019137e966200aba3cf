@@ -26,14 +26,17 @@ public class SendMessage extends BaseMethods {
 		HomePage homepage = new HomePage(mobiledriver);
 
 		scrollUntilElement("Inês Mikas 93");
-		homepage.sendMessageToFriend("Teste refactoring");
+
+		homepage.chat.click();
+		homepage.chat.sendKeys("teste page factory");
+		homepage.buttonsend.click();
 
 	}
 
 	@AfterClass
-	public static void teardown() throws Exception {
+	public static void teardown() {
 		// close the app
-		closeBrowser();
+		mobiledriver.quit();
 	}
 
 }

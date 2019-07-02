@@ -5,8 +5,11 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
+
 import generic.BaseMethods;
 import pages.HomePage;
+
+
 
 public class SendMessage extends BaseMethods {
 
@@ -16,24 +19,32 @@ public class SendMessage extends BaseMethods {
 
 	@BeforeClass
 	public static void setUp() throws Exception {
-
-		BaseMethods.openAPP();
+		
+		BaseMethods.openAPP();	
 	}
 
 	@Test
 	public void sendMessage() throws Exception {
-
+		
 		HomePage homepage = new HomePage(mobiledriver);
 
-		scrollUntilElement("Inês Mikas 93");
-		homepage.sendMessageToFriend("Teste refactoring");
-
+		String str = "Inês Mikas 93";
+		mobiledriver.findElementByAndroidUIAutomator(
+				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""
+						+ str + "\").instance(0))").click();
+	
+		homepage.chat.click();
+		homepage.chat.sendKeys("teste page factory");
+		homepage.buttonsend.click();
+	
 	}
-
+ 
 	@AfterClass
-	public static void teardown() throws Exception {
+	public static void teardown() {
 		// close the app
-		closeBrowser();
+		mobiledriver.quit();
 	}
+
+	
 
 }

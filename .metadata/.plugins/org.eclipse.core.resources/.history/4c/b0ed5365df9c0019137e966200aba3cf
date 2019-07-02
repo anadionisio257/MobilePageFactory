@@ -15,7 +15,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class BaseMethods {
-
+	
 	public static AndroidDriver<?> mobiledriver;
 
 	public static void openAPP() throws Exception {
@@ -32,30 +32,27 @@ public class BaseMethods {
 		caps.setCapability("appPackage", "com.whatsapp");
 		caps.setCapability("appActivity", "com.whatsapp.HomeActivity");
 		caps.setCapability("noReset", "true");
-
+		
 		mobiledriver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 		// takeScreenshot(testname, num++, path);
 	}
-
+	
 	// Method to take screenshots
-	public void takeScreenshot(String testname, int testid, String path) throws Exception {
-		File scrFile = ((TakesScreenshot) mobiledriver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File(path + testname + testid + "-" + timestamp() + ".jpeg"));
-	}
+		public void takeScreenshot(String testname, int testid, String path) throws Exception {
+			File scrFile = ((TakesScreenshot) mobiledriver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File(path + testname + testid + "-" + timestamp() + ".jpeg"));
+		}
 
-	public static String timestamp() {
-		return new SimpleDateFormat("dd-MM-yyyy HH.mm.ss").format(new Date());
-	}
-	
-	//Method to scroll until the element
-	public static void scrollUntilElement(String str) {
-		mobiledriver.findElementByAndroidUIAutomator(
-				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""
-						+ str + "\").instance(0))").click();
-	}
-	
-	public static void closeBrowser() throws Exception {
-		mobiledriver.quit();	
-	}
-
+		public static String timestamp() {
+			return new SimpleDateFormat("dd-MM-yyyy HH.mm.ss").format(new Date());
+		}
+		
+		public static void scrollUntilElement (String str){
+			mobiledriver.findElementByAndroidUIAutomator(
+					"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""
+							+ str + "\").instance(0))").click();
+			
+		}
+		
+		
 }
