@@ -4669,3 +4669,499 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-20 13:47:57.328 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.tools.openshift.cdk.server 4 0 2019-05-20 13:47:59.793
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.openshift.cdk.server [1185]
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.docker.core; bundle-version="2.0.0"
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.docker.core; bundle-version="2.3.0.201704251823"; singleton:="true"
+       org.eclipse.linuxtools.docker.core [1271]
+         Unresolved requirement: Require-Bundle: com.spotify.docker.client; bundle-version="[3.4.0,3.6.8)"
+           -> Bundle-SymbolicName: com.spotify.docker.client; bundle-version="3.4.0.v20160411-1914"
+              com.spotify.docker.client [1262]
+                Unresolved requirement: Import-Package: org.apache.http.impl.conn
+                  -> Export-Package: org.apache.http.impl.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.entity,org.apache.http.impl,org.apache.http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol,org.apache.http.util"
+                     org.apache.httpcomponents.httpclient [1456]
+                       Unresolved requirement: Import-Package: net.sf.ehcache; resolution:="optional"
+                       Unresolved requirement: Import-Package: net.spy.memcached; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.apache.commons.logging; version="1.2.0"
+                         -> Export-Package: org.apache.commons.logging; bundle-symbolic-name="org.slf4j.apis.jcl"; bundle-version="1.7.10.v20160208-0839"; version="1.7.10"
+                            org.slf4j.apis.jcl [1483]
+                              Unresolved requirement: Import-Package: org.slf4j; version="[1.7.10,1.8.0)"
+                Unresolved requirement: Import-Package: org.apache.http.conn
+                  -> Export-Package: org.apache.http.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.params,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.client.config
+                  -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http"
+                Unresolved requirement: Import-Package: org.apache.http.conn.ssl
+                  -> Export-Package: org.apache.http.conn.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.conn,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.conn.util,org.apache.http.params,org.apache.http.protocol,org.apache.http.ssl"
+                Unresolved requirement: Import-Package: org.glassfish.jersey.apache.connector
+                  -> Export-Package: org.glassfish.jersey.apache.connector; bundle-symbolic-name="org.glassfish.jersey.apache.connector"; bundle-version="2.22.1.v20161103-1916"; version="2.22.1"; uses:="javax.ws.rs.client,javax.ws.rs.core,org.apache.http.client,org.glassfish.jersey.client.spi,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.internal.util"
+                     org.glassfish.jersey.apache.connector [1031]
+                       Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.conn.routing; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.conn.routing; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.impl.auth; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.params,org.apache.http.protocol,org.apache.http.util,org.ietf.jgss"
+                       Unresolved requirement: Import-Package: org.apache.http.client.methods; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client.methods; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.client.config,org.apache.http.concurrent,org.apache.http.conn,org.apache.http.message,org.apache.http.params"
+                       Unresolved requirement: Import-Package: org.apache.http.conn; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.params,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http"
+                       Unresolved requirement: Import-Package: org.apache.http.conn.ssl; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.conn.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.conn,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.conn.util,org.apache.http.params,org.apache.http.protocol,org.apache.http.ssl"
+                       Unresolved requirement: Import-Package: org.apache.http.impl.client; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.impl.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.socket,org.apache.http.conn.ssl,org.apache.http.conn.util,org.apache.http.cookie,org.apache.http.impl,org.apache.http.impl.auth,org.apache.http.impl.execchain,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.impl.conn; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.impl.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.entity,org.apache.http.impl,org.apache.http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol,org.apache.http.util"
+                       Unresolved requirement: Import-Package: org.apache.http.conn.socket; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.conn.socket; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+                       Unresolved requirement: Import-Package: org.apache.http.client.protocol; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client.protocol; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.conn.socket
+                  -> Export-Package: org.apache.http.conn.socket; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+  Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.ui; bundle-version="3.1.0"
+    -> Bundle-SymbolicName: org.jboss.tools.openshift.ui; bundle-version="3.3.2.v20170216-1716"; singleton:="true"
+       org.jboss.tools.openshift.ui [1196]
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.docker.ui; bundle-version="[2.1.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.docker.ui; bundle-version="2.3.0.201704251823"; singleton:="true"
+              org.eclipse.linuxtools.docker.ui [1274]
+                Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.docker.core; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.linuxtools.docker.core; bundle-version="2.3.0.201704251823"; singleton:="true"
+                Unresolved requirement: Require-Bundle: com.spotify.docker.client; bundle-version="3.1.1"
+                  -> Bundle-SymbolicName: com.spotify.docker.client; bundle-version="3.4.0.v20160411-1914"
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.docker.core; bundle-version="[2.1.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.docker.core; bundle-version="2.3.0.201704251823"; singleton:="true"
+         Unresolved requirement: Require-Bundle: com.spotify.docker.client; bundle-version="3.4.0"
+           -> Bundle-SymbolicName: com.spotify.docker.client; bundle-version="3.4.0.v20160411-1914"
+         Unresolved requirement: Require-Bundle: org.apache.httpcomponents.httpclient
+           -> Bundle-SymbolicName: org.apache.httpcomponents.httpclient; bundle-version="4.5.5.v20180409-1525"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.openshift.common.core 2 0 2019-05-20 13:47:59.793
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.jboss.tools.openshift.common.core.connectionsFactory
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.jboss.tools.openshift.common.core.connection.ConnectionsFactory
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.jboss.tools.openshift.common.core.connection.IConnectionsFactory]
+	references = {
+		Reference[name = IConnectionFactory, interface = org.jboss.tools.openshift.common.core.connection.IConnectionFactory, policy = dynamic, cardinality = 0..n, target = null, bind = addConnectionFactory, unbind = removeConnectionFactory]
+	}
+	located in bundle = org.jboss.tools.openshift.common.core_3.3.3.v20170510-1453 [1423]
+]
+Component2: Component[
+	name = org.jboss.tools.openshift.common.core.connectionsFactory
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.jboss.tools.openshift.common.core.connection.ConnectionsFactory
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.jboss.tools.openshift.common.core.connection.IConnectionsFactory]
+	references = {
+		Reference[name = IConnectionFactory, interface = org.jboss.tools.openshift.common.core.connection.IConnectionFactory, policy = dynamic, cardinality = 0..n, target = null, bind = addConnectionFactory, unbind = removeConnectionFactory]
+	}
+	located in bundle = org.jboss.tools.openshift.common.core_3.3.2.v20170206-2133 [1187]
+]  
+
+!ENTRY org.jboss.tools.openshift.ui 4 0 2019-05-20 13:47:59.803
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.openshift.ui [1196]
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.docker.ui; bundle-version="[2.1.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.docker.ui; bundle-version="2.3.0.201704251823"; singleton:="true"
+       org.eclipse.linuxtools.docker.ui [1274]
+         Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.docker.core; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.linuxtools.docker.core; bundle-version="2.3.0.201704251823"; singleton:="true"
+              org.eclipse.linuxtools.docker.core [1271]
+                Unresolved requirement: Require-Bundle: com.spotify.docker.client; bundle-version="[3.4.0,3.6.8)"
+                  -> Bundle-SymbolicName: com.spotify.docker.client; bundle-version="3.4.0.v20160411-1914"
+                     com.spotify.docker.client [1262]
+                       Unresolved requirement: Import-Package: org.apache.http.impl.conn
+                         -> Export-Package: org.apache.http.impl.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.entity,org.apache.http.impl,org.apache.http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol,org.apache.http.util"
+                            org.apache.httpcomponents.httpclient [1456]
+                              Unresolved requirement: Import-Package: net.sf.ehcache; resolution:="optional"
+                              Unresolved requirement: Import-Package: net.spy.memcached; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.apache.commons.logging; version="1.2.0"
+                                -> Export-Package: org.apache.commons.logging; bundle-symbolic-name="org.slf4j.apis.jcl"; bundle-version="1.7.10.v20160208-0839"; version="1.7.10"
+                                   org.slf4j.apis.jcl [1483]
+                                     Unresolved requirement: Import-Package: org.slf4j; version="[1.7.10,1.8.0)"
+                       Unresolved requirement: Import-Package: org.apache.http.conn
+                         -> Export-Package: org.apache.http.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.params,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.client.config
+                         -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http"
+                       Unresolved requirement: Import-Package: org.apache.http.conn.ssl
+                         -> Export-Package: org.apache.http.conn.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.conn,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.conn.util,org.apache.http.params,org.apache.http.protocol,org.apache.http.ssl"
+                       Unresolved requirement: Import-Package: org.glassfish.jersey.apache.connector
+                         -> Export-Package: org.glassfish.jersey.apache.connector; bundle-symbolic-name="org.glassfish.jersey.apache.connector"; bundle-version="2.22.1.v20161103-1916"; version="2.22.1"; uses:="javax.ws.rs.client,javax.ws.rs.core,org.apache.http.client,org.glassfish.jersey.client.spi,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.internal.util"
+                            org.glassfish.jersey.apache.connector [1031]
+                              Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+                              Unresolved requirement: Import-Package: org.apache.http.conn.routing; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.conn.routing; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+                              Unresolved requirement: Import-Package: org.apache.http.impl.auth; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.params,org.apache.http.protocol,org.apache.http.util,org.ietf.jgss"
+                              Unresolved requirement: Import-Package: org.apache.http.client.methods; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.client.methods; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.client.config,org.apache.http.concurrent,org.apache.http.conn,org.apache.http.message,org.apache.http.params"
+                              Unresolved requirement: Import-Package: org.apache.http.conn; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.params,org.apache.http.protocol"
+                              Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http"
+                              Unresolved requirement: Import-Package: org.apache.http.conn.ssl; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.conn.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.conn,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.conn.util,org.apache.http.params,org.apache.http.protocol,org.apache.http.ssl"
+                              Unresolved requirement: Import-Package: org.apache.http.impl.client; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.impl.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.socket,org.apache.http.conn.ssl,org.apache.http.conn.util,org.apache.http.cookie,org.apache.http.impl,org.apache.http.impl.auth,org.apache.http.impl.execchain,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol"
+                              Unresolved requirement: Import-Package: org.apache.http.impl.conn; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.impl.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.entity,org.apache.http.impl,org.apache.http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol,org.apache.http.util"
+                              Unresolved requirement: Import-Package: org.apache.http.conn.socket; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.conn.socket; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+                              Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+                              Unresolved requirement: Import-Package: org.apache.http.client.protocol; version="[4.4.0,5.0.0)"
+                                -> Export-Package: org.apache.http.client.protocol; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.conn.socket
+                         -> Export-Package: org.apache.http.conn.socket; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+         Unresolved requirement: Require-Bundle: com.spotify.docker.client; bundle-version="3.1.1"
+           -> Bundle-SymbolicName: com.spotify.docker.client; bundle-version="3.4.0.v20160411-1914"
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.docker.core; bundle-version="[2.1.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.docker.core; bundle-version="2.3.0.201704251823"; singleton:="true"
+  Unresolved requirement: Require-Bundle: com.spotify.docker.client; bundle-version="3.4.0"
+    -> Bundle-SymbolicName: com.spotify.docker.client; bundle-version="3.4.0.v20160411-1914"
+  Unresolved requirement: Require-Bundle: org.apache.httpcomponents.httpclient
+    -> Bundle-SymbolicName: org.apache.httpcomponents.httpclient; bundle-version="4.5.5.v20180409-1525"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.linuxtools.docker.core 4 0 2019-05-20 13:47:59.803
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.docker.core [1271]
+  Unresolved requirement: Require-Bundle: com.spotify.docker.client; bundle-version="[3.4.0,3.6.8)"
+    -> Bundle-SymbolicName: com.spotify.docker.client; bundle-version="3.4.0.v20160411-1914"
+       com.spotify.docker.client [1262]
+         Unresolved requirement: Import-Package: org.apache.http.impl.conn
+           -> Export-Package: org.apache.http.impl.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.entity,org.apache.http.impl,org.apache.http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol,org.apache.http.util"
+              org.apache.httpcomponents.httpclient [1456]
+                Unresolved requirement: Import-Package: net.sf.ehcache; resolution:="optional"
+                Unresolved requirement: Import-Package: net.spy.memcached; resolution:="optional"
+                Unresolved requirement: Import-Package: org.apache.commons.logging; version="1.2.0"
+                  -> Export-Package: org.apache.commons.logging; bundle-symbolic-name="org.slf4j.apis.jcl"; bundle-version="1.7.10.v20160208-0839"; version="1.7.10"
+                     org.slf4j.apis.jcl [1483]
+                       Unresolved requirement: Import-Package: org.slf4j; version="[1.7.10,1.8.0)"
+         Unresolved requirement: Import-Package: org.apache.http.conn
+           -> Export-Package: org.apache.http.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.params,org.apache.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.http.client.config
+           -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http"
+         Unresolved requirement: Import-Package: org.apache.http.conn.ssl
+           -> Export-Package: org.apache.http.conn.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.conn,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.conn.util,org.apache.http.params,org.apache.http.protocol,org.apache.http.ssl"
+         Unresolved requirement: Import-Package: org.glassfish.jersey.apache.connector
+           -> Export-Package: org.glassfish.jersey.apache.connector; bundle-symbolic-name="org.glassfish.jersey.apache.connector"; bundle-version="2.22.1.v20161103-1916"; version="2.22.1"; uses:="javax.ws.rs.client,javax.ws.rs.core,org.apache.http.client,org.glassfish.jersey.client.spi,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.internal.util"
+              org.glassfish.jersey.apache.connector [1031]
+                Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.conn.routing; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.conn.routing; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.impl.auth; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.params,org.apache.http.protocol,org.apache.http.util,org.ietf.jgss"
+                Unresolved requirement: Import-Package: org.apache.http.client.methods; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client.methods; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.client.config,org.apache.http.concurrent,org.apache.http.conn,org.apache.http.message,org.apache.http.params"
+                Unresolved requirement: Import-Package: org.apache.http.conn; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.params,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http"
+                Unresolved requirement: Import-Package: org.apache.http.conn.ssl; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.conn.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.conn,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.conn.util,org.apache.http.params,org.apache.http.protocol,org.apache.http.ssl"
+                Unresolved requirement: Import-Package: org.apache.http.impl.client; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.impl.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.socket,org.apache.http.conn.ssl,org.apache.http.conn.util,org.apache.http.cookie,org.apache.http.impl,org.apache.http.impl.auth,org.apache.http.impl.execchain,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.impl.conn; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.impl.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.entity,org.apache.http.impl,org.apache.http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol,org.apache.http.util"
+                Unresolved requirement: Import-Package: org.apache.http.conn.socket; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.conn.socket; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+                Unresolved requirement: Import-Package: org.apache.http.client.protocol; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client.protocol; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.http.conn.socket
+           -> Export-Package: org.apache.http.conn.socket; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.linuxtools.docker.ui 4 0 2019-05-20 13:47:59.803
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.linuxtools.docker.ui [1274]
+  Unresolved requirement: Require-Bundle: org.eclipse.linuxtools.docker.core; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.linuxtools.docker.core; bundle-version="2.3.0.201704251823"; singleton:="true"
+       org.eclipse.linuxtools.docker.core [1271]
+         Unresolved requirement: Require-Bundle: com.spotify.docker.client; bundle-version="[3.4.0,3.6.8)"
+           -> Bundle-SymbolicName: com.spotify.docker.client; bundle-version="3.4.0.v20160411-1914"
+              com.spotify.docker.client [1262]
+                Unresolved requirement: Import-Package: org.apache.http.impl.conn
+                  -> Export-Package: org.apache.http.impl.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.entity,org.apache.http.impl,org.apache.http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol,org.apache.http.util"
+                     org.apache.httpcomponents.httpclient [1456]
+                       Unresolved requirement: Import-Package: net.sf.ehcache; resolution:="optional"
+                       Unresolved requirement: Import-Package: net.spy.memcached; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.apache.commons.logging; version="1.2.0"
+                         -> Export-Package: org.apache.commons.logging; bundle-symbolic-name="org.slf4j.apis.jcl"; bundle-version="1.7.10.v20160208-0839"; version="1.7.10"
+                            org.slf4j.apis.jcl [1483]
+                              Unresolved requirement: Import-Package: org.slf4j; version="[1.7.10,1.8.0)"
+                Unresolved requirement: Import-Package: org.apache.http.conn
+                  -> Export-Package: org.apache.http.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.params,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.client.config
+                  -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http"
+                Unresolved requirement: Import-Package: org.apache.http.conn.ssl
+                  -> Export-Package: org.apache.http.conn.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.conn,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.conn.util,org.apache.http.params,org.apache.http.protocol,org.apache.http.ssl"
+                Unresolved requirement: Import-Package: org.glassfish.jersey.apache.connector
+                  -> Export-Package: org.glassfish.jersey.apache.connector; bundle-symbolic-name="org.glassfish.jersey.apache.connector"; bundle-version="2.22.1.v20161103-1916"; version="2.22.1"; uses:="javax.ws.rs.client,javax.ws.rs.core,org.apache.http.client,org.glassfish.jersey.client.spi,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.internal.util"
+                     org.glassfish.jersey.apache.connector [1031]
+                       Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.conn.routing; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.conn.routing; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.impl.auth; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.params,org.apache.http.protocol,org.apache.http.util,org.ietf.jgss"
+                       Unresolved requirement: Import-Package: org.apache.http.client.methods; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client.methods; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.client.config,org.apache.http.concurrent,org.apache.http.conn,org.apache.http.message,org.apache.http.params"
+                       Unresolved requirement: Import-Package: org.apache.http.conn; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.params,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http"
+                       Unresolved requirement: Import-Package: org.apache.http.conn.ssl; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.conn.ssl; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.http,org.apache.http.conn,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.conn.util,org.apache.http.params,org.apache.http.protocol,org.apache.http.ssl"
+                       Unresolved requirement: Import-Package: org.apache.http.impl.client; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.impl.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.socket,org.apache.http.conn.ssl,org.apache.http.conn.util,org.apache.http.cookie,org.apache.http.impl,org.apache.http.impl.auth,org.apache.http.impl.execchain,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.impl.conn; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.impl.conn; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.entity,org.apache.http.impl,org.apache.http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol,org.apache.http.util"
+                       Unresolved requirement: Import-Package: org.apache.http.conn.socket; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.conn.socket; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+                       Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+                       Unresolved requirement: Import-Package: org.apache.http.client.protocol; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client.protocol; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.protocol"
+                Unresolved requirement: Import-Package: org.apache.http.conn.socket
+                  -> Export-Package: org.apache.http.conn.socket; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.5.v20180409-1525"; version="4.5.5"; uses:="org.apache.http,org.apache.http.protocol"
+  Unresolved requirement: Require-Bundle: com.spotify.docker.client; bundle-version="3.1.1"
+    -> Bundle-SymbolicName: com.spotify.docker.client; bundle-version="3.4.0.v20160411-1914"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jface 2 0 2019-05-20 13:48:09.218
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-20 13:48:09.218
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b45e264,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3272c5b3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-20 13:48:16.427
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'R:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-20 13:48:21.023
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:71)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:56)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:69)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2019-07-02 09:52:42.215 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.tools.openshift.common.core 2 0 2019-07-02 09:52:45.603
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.jboss.tools.openshift.common.core.connectionsFactory
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.jboss.tools.openshift.common.core.connection.ConnectionsFactory
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.jboss.tools.openshift.common.core.connection.IConnectionsFactory]
+	references = {
+		Reference[name = IConnectionFactory, interface = org.jboss.tools.openshift.common.core.connection.IConnectionFactory, policy = dynamic, cardinality = 0..n, target = null, bind = addConnectionFactory, unbind = removeConnectionFactory]
+	}
+	located in bundle = org.jboss.tools.openshift.common.core_3.3.3.v20170510-1453 [1423]
+]
+Component2: Component[
+	name = org.jboss.tools.openshift.common.core.connectionsFactory
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.jboss.tools.openshift.common.core.connection.ConnectionsFactory
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.jboss.tools.openshift.common.core.connection.IConnectionsFactory]
+	references = {
+		Reference[name = IConnectionFactory, interface = org.jboss.tools.openshift.common.core.connection.IConnectionFactory, policy = dynamic, cardinality = 0..n, target = null, bind = addConnectionFactory, unbind = removeConnectionFactory]
+	}
+	located in bundle = org.jboss.tools.openshift.common.core_3.3.2.v20170206-2133 [1187]
+]  
+
+!ENTRY org.eclipse.jface 2 0 2019-07-02 09:53:01.255
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-07-02 09:53:01.255
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@52d0a5fe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f10082e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-07-02 09:53:09.978
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'R:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-07-02 09:53:14.533
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:339)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 17 more
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-02 10:28:43.580
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-02 10:28:43.583
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-02 10:31:31.755
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-02 10:31:31.757
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
