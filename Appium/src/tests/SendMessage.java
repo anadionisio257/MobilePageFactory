@@ -23,8 +23,9 @@ public class SendMessage extends BaseMethods {
 
 		SingleChatPage singlechatpage = new SingleChatPage(mobiledriver);
 
-		scrollUntilElement("Inês Mikas 93");
-		singlechatpage.sendMessageToFriend("Teste refactoring");
+		scrollUntilElement("HMV <3 91");
+		singlechatpage.sendMessageToFriend("Atenção que é teste");
+		singlechatpage.sendMessageToFriend("\ud83d\udce2"); //send an Emoji
 
 	}
 

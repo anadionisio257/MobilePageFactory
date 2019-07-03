@@ -5,7 +5,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import generic.BaseMethods;
 import pages.HomePage;
-import pages.SingleChatPage;
 
 public class HomePageValidation extends BaseMethods {
 	

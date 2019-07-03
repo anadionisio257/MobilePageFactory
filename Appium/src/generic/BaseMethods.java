@@ -32,6 +32,9 @@ public class BaseMethods {
 		caps.setCapability("appPackage", "com.whatsapp");
 		caps.setCapability("appActivity", "com.whatsapp.HomeActivity");
 		caps.setCapability("noReset", "true");
+		caps.setCapability("unicodeKeyboard", "true");
+		caps.setCapability("resetKeyboard", "true");
+		
 
 		mobiledriver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 		// takeScreenshot(testname, num++, path);

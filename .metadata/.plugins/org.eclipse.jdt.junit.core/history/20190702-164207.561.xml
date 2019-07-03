@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="SendMessage (1)" project="Appium" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="tests.SendMessage" time="14.969">
-    <testcase name="sendMessage" classname="tests.SendMessage" time="14.969"/>
-  </testsuite>
-</testrun>
