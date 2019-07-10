@@ -35,10 +35,7 @@ public class HomePageValidation extends BaseMethods {
 		clickAndroidBackButton();
 		homepage.clickOnCamera();
 		clickAndroidBackButton();
-		
-		//Teste git
-		
-
+	
 	}
 
 	@AfterClass
