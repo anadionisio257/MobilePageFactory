@@ -22,10 +22,14 @@ public class SendMessage extends BaseMethods {
 	public void sendMessage() throws Exception {
 
 		SingleChatPage singlechatpage = new SingleChatPage(mobiledriver);
-
-		scrollUntilElement("HMV <3 91");
+		
+		scrollUntilElement("Inês Mikas 93");
+		//turnWiFI();
 		singlechatpage.sendMessageToFriend("Atenção que é teste");
 		singlechatpage.sendMessageToFriend("\ud83d\udce2"); //send an Emoji
+		
+	
+		
 
 	}
 

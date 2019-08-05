@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import generic.BaseMethods;
+import io.appium.java_client.InteractsWithFiles;
 import io.appium.java_client.android.AndroidDriver;
 
 public class SingleChatPage extends BaseMethods {
@@ -89,5 +90,6 @@ public class SingleChatPage extends BaseMethods {
 	public void sendEmoji(String id){
 		chat.sendKeys(id);
 	}
+	
 
 }

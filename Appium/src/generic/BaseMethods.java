@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
@@ -64,6 +65,11 @@ public class BaseMethods {
 	//Method to click on Android Native Back Button
 	public static void clickAndroidBackButton(){
 		mobiledriver.navigate().back();
+	}
+	
+	//Changes WiFi on and off
+	public static void turnWiFI(){
+		mobiledriver.toggleWifi();
 	}
 
 }
