@@ -15,7 +15,8 @@
 	<classpathentry kind="lib" path="C:/Users/asofiadi/Desktop/Selenium/JARs/libs/okhttp-3.10.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/asofiadi/Desktop/Selenium/JARs/libs/okio-1.14.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/asofiadi/Desktop/SantanderUK/01.Instalation/java-client-7.0.0.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="C:/Users/asofiadi/Desktop/Selenium/JARs/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asofiadi/Desktop/Selenium/JARs/junit-4.13-beta-3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/asofiadi/Desktop/Selenium/JARs/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
