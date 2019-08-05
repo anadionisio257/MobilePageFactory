@@ -23,7 +23,7 @@ public class SendMessage extends BaseMethods {
 
 		SingleChatPage singlechatpage = new SingleChatPage(mobiledriver);
 		
-		scrollUntilElement("Inês Mikas 93");
+		scrollUntilElement("HMV <3 91");
 		//turnWiFI();
 		singlechatpage.sendMessageToFriend("Atenção que é teste");
 		singlechatpage.sendMessageToFriend("\ud83d\udce2"); //send an Emoji
